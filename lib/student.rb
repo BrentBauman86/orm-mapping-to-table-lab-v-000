@@ -6,12 +6,12 @@ class Student
   def initialize(name, grade, id = nil)
     @name = name
     @grade = grade
-    @id = id 
+    @id = id
   end
 
   def self.create_table
     sql = <<-SQL
-      
+
     SQL
   end
 
