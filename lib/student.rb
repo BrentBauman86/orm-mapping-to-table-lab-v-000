@@ -37,10 +37,10 @@ class Student
     # @id = DB[:conn].execute("SELECT")
   end
 
-  def self.create
-    sql = <<-SQL
-
-    SQL
+  def self.create(name:, grade:)
+      student = Student.new(name, grade)
+      student.save
+      student
   end
 
 end
